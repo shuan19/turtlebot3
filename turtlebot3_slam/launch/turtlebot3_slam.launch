@@ -15,6 +15,9 @@
     <arg name="model" value="$(arg model)"/>
     <arg name="configuration_basename" value="$(arg configuration_basename)"/>
   </include>
+ <!-- Properties of each robot      -->
+
+  <include file="$(find turtlebot3_gazebo)/launch/amcl_robot.launch" />
 
   <!-- rviz -->
   <group if="$(arg open_rviz)"> 
